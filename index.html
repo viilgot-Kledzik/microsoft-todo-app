@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body class="bg-gray-100 p-10">
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+            <div class="p-8">
+                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Todo App</div>
+                <input type="text" id="taskInput" placeholder="Enter a task" class="w-full mt-2 mb-2 p-2 border border-gray-300 rounded-md">
+                <input type="date" id="dateInput" class="w-full mt-2 mb-2 p-2 border border-gray-300 rounded-md">
+                <button id="addTaskButton" class="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add Task</button>
+                <ul id="taskList" class="divide-y divide-gray-200"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
